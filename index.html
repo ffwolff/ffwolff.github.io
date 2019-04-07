@@ -1,107 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <html lang=“pt-br”>
-  <meta charset=“UTF-8”/> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://use.fontawesome.com/c717731495.js"></script>
-  <script src="script.js"></script>
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway">
-  <link href="style.css" rel="stylesheet">
-</head>
-
-<body>
-<header>
-    <div class="container">
-      <div class="nav">
-      <ul>
-        <li id="logo">Franco Wolff</li>
-        <li><a class="smoothScroll" href="#pageZero">Início</a></li>
-        <li><a class="smoothScroll" href="#pageOne">Sobre</a></li>
-        <li><a class="smoothScroll" href="#pageTwo">Portfólio</a></li>
-        <li><a class="smoothScroll" href="#pageThree">Contato</a></li>
+  <head>
+    <html lang=“pt-br”>
+    <meta charset=“UTF-8”/> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Franco F. Wolff</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/c717731495.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div id="home" class="upHeader">
+      <div>
+        <h1>Olá, </h1>
+        <h2>meu nome é Franco.</h2>
+        <h3>Obrigado por visitar meu portfólio =]</h3>
       </div>
     </div>
-  </header>
-  <div class="pageZero text-center bgParallax" id="pageZero">
-    <div class="col-xs-offset-5 col-sm-offset-6 col-xs-7 col-sm-6" id="row">
-     <div class="styleName">Franco</div>
-      <div class="styleName">Wolff</div>
-       <div class="styleText">
-        <div class="styleTexta">{</div>
-        <div class="styleTextb">
-          Músico ;<br> 
-          Programador ;<br> 
-          WebDesigner ;<br>
-        <div class="styleTextc">}</div>
-       </div>
-      </div>
+    <div id="navBar" class="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+        <i id="menuIcon" class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="smoothScroll">Início</a>
+      <a href="#about" class="smoothScroll">Sobre</a>
+      <a href="#portfolio" class="smoothScroll">Portfólio</a>
+      <a href="#contact" class="smoothScroll">Contato</a>
     </div>
-  </div>
-  <div class="pageOne bgParallax" id="pageOne">
-    <span class="line about"></span>
-    <span class="section-title about">Sobre</span>
-    <span class="line about"></span>
-    <div class= "row">
-     <div class="aboutMe">
-      <h2><i class="fa fa-quote-left"></i>Nasci em 30 de dezembro de 1990 em Santa Maria, no Rio Grande do Sul.</br>
-Iniciei os estudos em programação no Free Code Camp em 2016, junto com os programas Adobe After Effects e Adobe Premiere Pro com o objetivo de me especializar em criação de conteúdo com vídeos, imagem e web design.
-Em 2017 ingressei no curso de Sistemas para Internet no Instituto Federal do Rio Grande do Sul - IFRS.
-        <br>Tenho paixão por música e café, gosto de aprender coisas novas e sempre tento me aperfeiçoar.</h2>
-     </div>
-     <div class="aboutPic">
-      <img src="images/ffwolff.jpg" class="myPic">
-     </div>
+    <div class="lowHeader">
+      <h1> </h1>
     </div>
-  </div>
-  
-  <div class="pageTwo text-center bgParallax" id="pageTwo">
-    <span class="portLine"></span>
-          <span class="section-title portfolio">Portfólio</span>
-          <span class="portLine"></span>
-    <!-- CAIXAS -->
-<div class="imgHover column">
-  <div>
-    <figure><a href="https://codepen.io/ffwolff/pen/dXLYyY" target="_blank"><img src="images/weatherapp.jpg" /></a></figure>
-  </div>
-  <div>
-    <figure><a href="https://marvelapp.com/316afhh/screen/34821078" target="_blank"><img src="images/flow.jpg" /></a></figure>
-  </div>
-  <div>
-    <figure><img src="" /></figure>
-  </div>
-  <div>
-    <figure><img src="" /></figure>
-  </div>
-  <div>
-    <figure><img src="" /></figure>
-  </div>
-</div>
-      <!-- Fim das caixas -->
-
- </div>
-  
-  <div class="pageThree text-center bgParallax" id="pageThree">
-    <span class="contLine"></span>
-          <span class="section-title contact">Contato</span>
-          <span class="contLine"></span>
-    <div class="contact-box text-left">
-  <h2> <p>Sinta-se livre para entrar em contato comigo.</p>
-      <p>Responderei por e-mail ou em qualquer rede social.</p> 
-    </h2>
-    <h3 class="text-right">
-      <i class="fa fa-envelope" aria-hidden="true"></i> francofwolff@gmail.com
-    </h3>
-</div>
-  <div class="btnList text-center">
-    <a href="https://www.facebook.com/ff.wolff" target="_blank" class="contactBtn" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-    <a href="https://github.com/ffwolff" target="_blank" class="contactBtn" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-    <a href="https://www.linkedin.com/in/ffwolff" target="_blank" class="contactBtn" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    <a href="https://www.freecodecamp.com/ffwolff" target="_blank" class="contactBtn" href="#"><i class="fa fa-fire" aria-hidden="true"></i></a>
-    <a href="https://twitter.com/AInternetSouEu" target="_blank" class="contactBtn" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-  </div>
-  </div>
-  
-  
-</body>
+    <div id="about" class="content">
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+      <p>TESTE</p><br/>
+    </div>
+    <div id="portfolio" class="content">
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      <p>PORTIFOLIO</p><br/>
+      
+    </div>
+    <div id="contact" class='flex-content'>
+      <a href="#" class="icon" target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#" class="icon" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="#" class="icon" target="_blank">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="#" class="icon" target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </div>
+  </body>
 </html>
