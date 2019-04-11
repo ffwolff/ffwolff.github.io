@@ -43,8 +43,6 @@ $(function() {
 });
 
 //Sticky//
-
-
 var navPosition=$('#navBar').offset().top;
 
 
