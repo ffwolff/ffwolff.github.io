@@ -1,0 +1,31 @@
+
+.upHeader {
+	background-color: #FFE066;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-size: 32pt;
+  }
+  h2{
+    font-size: 26pt;
+  }
+  h3{
+    font-size: 22pt;
+  }
+}
+.lowHeader {
+  background-color: #FFE066;
+	padding: 20%;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+  .upHeader {
+    padding: 20%;
+  }
+  .lowHeader {
+    padding: 40%;
+  }
+}
