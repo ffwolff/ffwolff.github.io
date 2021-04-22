@@ -7,14 +7,16 @@ $mustard: #FFE066;
 $lazuli: #247BA0;
 $green: #70C1B3;
 
+@import url(http://fonts.googleapis.com/css?family=Lora:400|Raleway:100,200,300,400,500,700,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
 @import './topnav';
 @import './about';
 @import './home';
 @import './about';
 @import './portifolio';
+@import './contact';
 
-@import url(http://fonts.googleapis.com/css?family=Lora:400|Raleway:100,200,300,400,500,700,800);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
 
 /* Reset CSS */
 html, body, div, span, applet, object, iframe,
@@ -48,16 +50,6 @@ body {
 }
 .content {
   background-color: white;
-}
-
-
-/* PORTFOLIO */
-
-
-/* CONTACT */
-#contact{
-  padding: 100px 5% 5% 5%;
-  min-height:100vh;
 }
 
 

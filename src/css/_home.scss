@@ -1,6 +1,6 @@
 
 .upHeader {
-	background-color: #FFE066;
+	background-color: $mustard;
   padding: 10%;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
   }
 }
 .lowHeader {
-  background-color: #FFE066;
+  background-color: $mustard;
 	padding: 20%;
 }
 

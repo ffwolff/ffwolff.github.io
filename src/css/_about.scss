@@ -34,7 +34,7 @@
   .aboutImgRow {
     width: 450px;
     height: 450px;
-    background-color: #50514F;
+    background-color: $darkliver;
     overflow: hidden;
     margin-top: 150px;
   }
@@ -46,3 +46,24 @@
       object-fit: cover;
       transition: transform 400ms ease-out;
   }
+
+
+  /*MOBILE*/
+  @media screen and (max-width: 600px) {
+    #about{
+      h1{
+        margin-top: 300px;
+      }
+    }
+    .aboutContent{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .aboutImgRow {
+      margin-top: 0px;
+    }
+
+
+  }
+

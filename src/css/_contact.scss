@@ -1,0 +1,12 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {        
+        text-transform: uppercase;
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    min-height:100vh;
+  }
