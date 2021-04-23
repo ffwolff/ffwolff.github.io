@@ -381,6 +381,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -388,6 +390,9 @@
           align-items: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
+  -webkit-box-shadow: 5px 10px #170609;
+          box-shadow: 5px 10px #170609;
+  width: 100%;
 }
 
 .imgBox {
@@ -411,6 +416,20 @@
 
 .textBox {
   max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.textBox h2 {
+  text-transform: uppercase;
+  font-size: 25px;
 }
 
 .galleryImage:hover {
