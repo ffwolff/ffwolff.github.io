@@ -393,6 +393,7 @@
   -webkit-box-shadow: 5px 10px #170609;
           box-shadow: 5px 10px #170609;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .imgBox {
