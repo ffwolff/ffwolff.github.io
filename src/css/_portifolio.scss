@@ -6,20 +6,26 @@
     h1 {        
         text-transform: uppercase;
         margin-top: 100px;
+        margin-bottom: 100px;
         font-size: 25px;
     }
   }
   
   .gallery {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
     min-height:100vh;
   }
-  
+  .gallery-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+  }
   .imgBox {
     width: 300px;
     height: auto;
@@ -32,6 +38,9 @@
       height: 100%;
       object-fit: cover;
       transition: transform 400ms ease-out;
+  }
+  .textBox {
+    max-width: 50%;
   }
   
   .galleryImage:hover {

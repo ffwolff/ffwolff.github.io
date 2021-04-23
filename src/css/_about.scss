@@ -13,17 +13,18 @@
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
+    align-content: space-around;
   }  
   .textBlock{
       width: 450px;
       height: 450px;
       margin: 20px;
       text-align: justify;
-      color: $mustard;
-      background-color: $smoky;
+      color: $smoky;
+      background-color: $mustard;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,7 +37,7 @@
     height: 450px;
     background-color: $darkliver;
     overflow: hidden;
-    margin-top: 150px;
+    align-self: flex-end;
   }
   
   .aboutImg {
@@ -62,6 +63,7 @@
     }
     .aboutImgRow {
       margin-top: 0px;
+      margin-bottom: 0px;
     }
 
 

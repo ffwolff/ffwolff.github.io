@@ -107,12 +107,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 .textBlock {
@@ -120,8 +123,8 @@
   height: 450px;
   margin: 20px;
   text-align: justify;
-  color: #FFE066;
-  background-color: #170609;
+  color: #170609;
+  background-color: #FFE066;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,7 +145,8 @@
   height: 450px;
   background-color: #50514F;
   overflow: hidden;
-  margin-top: 150px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .aboutImg {
@@ -176,6 +180,7 @@
   }
   .aboutImgRow {
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -252,12 +257,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 .textBlock {
@@ -265,8 +273,8 @@
   height: 450px;
   margin: 20px;
   text-align: justify;
-  color: #FFE066;
-  background-color: #170609;
+  color: #170609;
+  background-color: #FFE066;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +295,8 @@
   height: 450px;
   background-color: #50514F;
   overflow: hidden;
-  margin-top: 150px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .aboutImg {
@@ -321,6 +330,7 @@
   }
   .aboutImgRow {
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -343,6 +353,7 @@
 #portfolio h1 {
   text-transform: uppercase;
   margin-top: 100px;
+  margin-bottom: 100px;
   font-size: 25px;
 }
 
@@ -350,10 +361,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
@@ -364,6 +375,19 @@
   -ms-flex-line-pack: distribute;
       align-content: space-around;
   min-height: 100vh;
+}
+
+.gallery-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 .imgBox {
@@ -383,6 +407,10 @@
   transition: -webkit-transform 400ms ease-out;
   transition: transform 400ms ease-out;
   transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
+}
+
+.textBox {
+  max-width: 50%;
 }
 
 .galleryImage:hover {
