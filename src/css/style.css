@@ -138,6 +138,7 @@
 
 .textBlock p {
   padding: 20px;
+  font-family: "Raleway", sans-serif;
 }
 
 .aboutImgRow {
@@ -290,6 +291,7 @@
 
 .textBlock p {
   padding: 20px;
+  font-family: "Raleway", sans-serif;
 }
 
 .aboutImgRow {
@@ -394,8 +396,8 @@
           align-items: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  -webkit-box-shadow: 5px 10px #170609;
-          box-shadow: 5px 10px #170609;
+  -webkit-box-shadow: 5px 5px 8px #170609;
+          box-shadow: 5px 5px 8px #170609;
   width: 100%;
   margin-bottom: 15px;
 }
@@ -405,6 +407,7 @@
   height: auto;
   background-color: #50514F;
   overflow: hidden;
+  margin: 10px;
 }
 
 .galleryImage {
@@ -421,25 +424,53 @@
 
 .textBox {
   max-width: 50%;
+  min-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: justify;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 10px;
 }
 
 .textBox h2 {
   text-transform: uppercase;
   font-size: 25px;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin-bottom: 15px;
+}
+
+.textBox p {
+  font-family: "Raleway", sans-serif;
+}
+
+.textBox a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 15px;
+  color: #247BA0;
+  text-decoration: none;
+}
+
+.textBox a:hover {
+  color: #50514F;
 }
 
 .galleryImage:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
+}
+
+@media screen and (max-width: 700px) {
+  .textBox {
+    max-width: 80%;
+  }
 }
 
 #contact {

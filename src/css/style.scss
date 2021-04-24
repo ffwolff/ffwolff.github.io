@@ -10,6 +10,10 @@ $green: #70C1B3;
 @import url(http://fonts.googleapis.com/css?family=Lora:400|Raleway:100,200,300,400,500,700,800);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
 
+$raleway: 'Raleway', sans-serif;
+$montserrat: "Montserrat", Arial, sans-serif;
+$lora: 'Lora', serif;
+
 @import './topnav';
 @import './about';
 @import './home';
@@ -46,7 +50,7 @@ time, mark, audio, video {
 body {
   background-color: #FFE066;
 	margin: 0;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: $montserrat;
 }
 .content {
   background-color: white;
