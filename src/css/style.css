@@ -119,8 +119,8 @@
 }
 
 .textBlock {
-  width: 450px;
-  height: 450px;
+  max-width: 450px;
+  min-height: 450px;
   margin: 20px;
   text-align: justify;
   color: #170609;
@@ -141,8 +141,7 @@
 }
 
 .aboutImgRow {
-  width: 450px;
-  height: 450px;
+  max-width: 450px;
   background-color: #50514F;
   overflow: hidden;
   -ms-flex-item-align: end;
@@ -181,6 +180,9 @@
   .aboutImgRow {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  .textBlock {
+    margin: 0px;
   }
 }
 
@@ -269,8 +271,8 @@
 }
 
 .textBlock {
-  width: 450px;
-  height: 450px;
+  max-width: 450px;
+  min-height: 450px;
   margin: 20px;
   text-align: justify;
   color: #170609;
@@ -291,8 +293,7 @@
 }
 
 .aboutImgRow {
-  width: 450px;
-  height: 450px;
+  max-width: 450px;
   background-color: #50514F;
   overflow: hidden;
   -ms-flex-item-align: end;
@@ -331,6 +332,9 @@
   .aboutImgRow {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  .textBlock {
+    margin: 0px;
   }
 }
 
