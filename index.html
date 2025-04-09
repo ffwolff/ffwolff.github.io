@@ -1,141 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <html lang=“pt-br”>
-    <meta charset=“UTF-8”/> 
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Franco F. Wolff</title>
-    
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway">
-    <link href="src/css/style.css" rel="stylesheet">
-  </head>
-  <body id="top">
-    
-    <div id="home" class="upHeader">
-      <div>
-        <h1>Olá, </h1>
-        <h2>meu nome é Franco.</h2>
-        <h3>Obrigado por visitar meu portfólio =]</h3>
-      </div>
-    </div>
-    <div id="navBar" class="topnav">
-      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-        <i id="menuIcon" class="fa fa-bars"></i>
-      </a>
-      <a href="#top" class="smoothScroll">Início</a>
-      <a href="#about" class="smoothScroll">Sobre</a>
-      <a href="#portfolio" class="smoothScroll">Portfólio</a>
-      <a href="#contact" class="smoothScroll">Contato</a>
-    </div>
-    <div class="lowHeader">
-      <h1> </h1>
-    </div>
-    <div class="content">
-      <!--SOBRE-->
-      <div id="about">
-        <h1>Sobre</h1>
-        <div class="aboutContent">
-          <div class="textBlock">
-            <p>
-              Meu nome é Franco, moro em Porto Alegre e nasci em dezembro de 1990.
-              Estudo Sistemas para Internet no IFRS, sou um desenvolvedor Frontend em formação.
-              Sou uma típica criança dos anos 90: assisti muito desenho, joguei muito vídeo-game e acompanhei o crescimento dessa indústria até os dias de hoje.
-              Meu primeiro contato com Frontend foi por volta dos meus 14 anos, quando estilizava templates de blogs usando HTML e, 
-              por algum tempo, usei alguns códigos disponíveis na internet para adicionar funcionalidades em jogos no RPG Maker.
-              Só comecei a estudar programação web em 2016, através do Free Code Camp e, em 2017, entrei no curso superior de Sistemas para Internet no IFRS. 
-              O Frontend é a parte do desenvolvimento que mais me interessa, além de me arriscar em edições de imagem e design gráfico em geral. Eu sou um leitor assíduo e apaixonado por fantasia. 
-            </p>
-          </div>
-          <div class='aboutImgRow'>
-            <img class="aboutImg" src="/images/ffwolff.png" >
-          </div>
-          <div class="textBlock">
-            <p>
-            Gosto de conversar sobre histórias e gasto boas horas do meu dia lendo, assistindo séries e filmes ou cozinhando alguma receita que encontrei na internet. 
-            Fui escoteiro, entrei no movimento em 1999 e parei de frequentar as atividades em 2008. Foi um período da minha vida de muito aprendizado, tanto sobre mim quanto sobre comunidade no geral. Ser escoteiro é uma experiência que se leva para o resto da vida.
-            Outras pessoas podem me interpretar como uma pessoa séria em primeiro momento, mas garanto que após me conhecer e me sentir mais confortável eu posso me tornar uma pessoa divertida e muito fácil de lidar. Eu gosto de ouvir, aprender e me sentir útil para as outras pessoas. 
-            </p>
-          </div>
-        </div>      
-      </div>
-      <!--PORTIFOLIO-->
-      <div id="portfolio" class="content">
-        <h1>Portfólio</h1>
-        <div class="gallery">
-          <div class="gallery-item">
-            <div class="imgBox">
-              <img class="galleryImage" src="./images/portifolio-001.jpg" 
-              alt="">
-            </div>
-            <div class="textBox">
-              <h2>Coop Geeks</h2>
-              <p>
-                Coop Geeks é um site sobre cultura pop com foco em pautas sociais sobre a diversidade, em especial a causa LGBTQIAP+.
-              </p>
-              <a href="http://www.coopgeeks.com.br" target="_blank">Abrir aqui.</a>
-            </div>              
-          </div>
-          <div class="gallery-item">
-            <div class="imgBox">
-              <img class="galleryImage" src="./images/portifolio-002.jpg" 
-              alt="">
-            </div>
-            <div class="textBox">
-              <h2>Layout E-commerce</h2>
-              <p>
-                Layout feito conforme o teste Frontend challenge júnior para a VNDA.
-              </p>
-              <a href="https://ffwolff.github.io/layout-ecommerce/" target="_blank">Abrir aqui.</a>
-            </div>              
-          </div>  
-          <div class="gallery-item">
-            <div class="imgBox">
-              <img class="galleryImage" src="./images/portifolio-003.jpg" 
-              alt="">
-            </div>
-            <div class="textBox">
-              <h2>Biblioteca Ágil</h2>
-              <p>
-                Programa criado conforme o desafio do Centro de Inovação da PUCRS.
-              </p>
-              <a href="https://github.com/ffwolff/biblioteca-agil" target="_blank">Abrir aqui.</a>
-            </div>              
-          </div>
-          <div class="gallery-item">  
-            <div class="imgBox">
-              <img class="galleryImage" src="./images/portifolio-004.jpg" 
-              alt="">
-            </div>          
-            <div class="textBox">
-              <h2>ScratchX: Bloco de conexão com Websocket</h2>
-              <p>
-                Bloco criado utilizando JavaScript para criar uma conxexão local com websocket no ScratchX.
-              </p>
-              <a href="https://github.com/ffwolff/scratchx-extensions" target="_blank">Abrir aqui.</a>
-            </div>              
-          </div>        
-        </div> 
-      </div>
-      <div id="contact" class='flex-content'>
-        <h1>Contato</h1>
-        <div class="iconList">
-          <a href="mailto:francofwolff@gmail.com">
-            <p> <i class="fa fa-envelope-square"></i> francofwolff@gmail.com</p>
-          </a>
-          <a href="https://github.com/ffwolff/" class="icon" target="_blank">
-            <i class="fa fa-github-square"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/ffwolff/" class="icon" target="_blank">
-            <i class="fa fa-linkedin-square"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <footer>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Franco Frassanito Wolff | Portfólio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
 
-    </footer>
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://use.fontawesome.com/c717731495.js"></script>
-  <script src="src/js/script.js"></script>
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+      <h1 class="text-2xl font-bold">Franco Wolff</h1>
+      <nav class="space-x-4">
+        <a href="#sobre" class="hover:underline">Sobre</a>
+        <a href="#projetos" class="hover:underline">Projetos</a>
+        <a href="#habilidades" class="hover:underline">Habilidades</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sobre -->
+  <section id="sobre" class="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8">
+    <img src="./assets/profile.jpg" alt="Foto de perfil" class="w-40 h-40 rounded-full object-cover shadow-md" />
+    <div>
+      <h2 class="text-3xl font-semibold mb-4">Sobre mim</h2>
+      <p class="text-lg leading-relaxed">
+        Desenvolvedor formado em Sistemas para Internet pelo IFRS, com experiência em tecnologias como HTML, CSS, JavaScript, React, TypeScript e NodeJS. Atuou na ThoughtWorks, contribuindo com projetos inovadores em front-end, back-end e realidade aumentada. Tem paixão por impacto social, metodologias ágeis e desenvolvimento de produtos criativos com tecnologia.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="bg-white py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-8">Projetos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Exemplo de projeto -->
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Nome do Projeto</h3>
+          <p class="mb-4">Descrição breve do projeto. O que ele faz? Qual tecnologia foi usada?</p>
+          <a href="#" class="text-blue-600 hover:underline">Ver no GitHub</a>
+        </div>
+        <!-- Adicione mais projetos aqui -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-semibold mb-6">Habilidades</h2>
+    <div class="flex flex-wrap gap-4">
+      <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">HTML</span>
+      <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">CSS</span>
+      <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">JavaScript</span>
+      <span class="bg-blue-200 text-blue-900 px-4 py-2 rounded-full">TypeScript</span>
+      <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">React</span>
+      <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">NodeJS</span>
+      <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Git</span>
+      <span class="bg-pink-100 text-pink-800 px-4 py-2 rounded-full">Agile</span>
+      <!-- Adicione outras habilidades se quiser -->
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Contato</h2>
+      <p class="mb-6">Quer conversar? Me envie uma mensagem ou conecte-se comigo nas redes:</p>
+      <div class="flex justify-center gap-6">
+        <a href="https://github.com/ffwolff" target="_blank" class="text-gray-700 hover:text-black">GitHub</a>
+        <a href="https://linkedin.com/in/ffwolff" target="_blank" class="text-gray-700 hover:text-blue-600">LinkedIn</a>
+        <!-- Futuramente podemos adicionar um formulário de contato aqui -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center py-4 mt-12">
+    <p class="text-sm">© 2025 Franco Wolff. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
 </html>
