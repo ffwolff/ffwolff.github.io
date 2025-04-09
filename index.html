@@ -12,12 +12,20 @@
   <script src="script.js"></script>
   <!-- Header -->
   <header class="bg-white shadow-md">
-    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Esquerda: nome -->
       <h1 class="text-2xl font-bold">Franco Wolff</h1>
   
-      <!-- Direita: navegação + ícones -->
-      <div class="flex items-center space-x-6">
+      <!-- Botão do menu (mobile) -->
+      <button id="menu-button" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+  
+      <!-- Navegação e ícones (desktop) -->
+      <div class="hidden md:flex items-center space-x-6">
         <nav class="space-x-4">
           <a href="#sobre" class="hover:underline">Sobre</a>
           <a href="#projetos" class="hover:underline">Projetos</a>
@@ -28,13 +36,13 @@
         <!-- Ícones sociais -->
         <div class="flex space-x-4">
           <a href="https://github.com/ffwolff" target="_blank" aria-label="GitHub" class="hover:text-gray-400">
-            <!-- Ícone GitHub -->
+            <!-- GitHub -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
               <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.8-1.5-3.8-1.5-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.2 3 .9.1-.6.3-1.2.6-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.3.3.6.9.6 1.8v2.6c0 .3.2.7.8.6a10.5 10.5 0 0 0 7.8-10.9C23.5 5.6 18.4.5 12 .5Z"/>
             </svg>
           </a>
           <a href="https://linkedin.com/in/ffwolff" target="_blank" aria-label="LinkedIn" class="hover:text-gray-400">
-            <!-- Ícone LinkedIn -->
+            <!-- LinkedIn -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
               <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5Zm.02 4.7h-.03c-.01 0-.01 0 0 0H5v11H2V8.2h3Zm7.5.2c-1.67 0-2.5 1.08-2.94 1.84v-.02H9V8.2h-3v11h3v-5.8c0-.41.03-.83.18-1.1.4-.7 1.05-1.4 2.27-1.4 1.6 0 2.2 1.05 2.2 2.6V19.2h3v-6.1c0-3.5-1.87-5.1-4.47-5.1Z"/>
             </svg>
@@ -42,7 +50,39 @@
         </div>
       </div>
     </div>
+  
+    <!-- Menu mobile (dropdown) -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <nav class="flex flex-col space-y-2">
+        <a href="#sobre" class="hover:underline">Sobre</a>
+        <a href="#projetos" class="hover:underline">Projetos</a>
+        <a href="#habilidades" class="hover:underline">Habilidades</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+        <div class="flex space-x-4 mt-2">
+          <a href="https://github.com/ffwolff" target="_blank" aria-label="GitHub" class="hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.8-1.5-3.8-1.5-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.2 3 .9.1-.6.3-1.2.6-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.3.3.6.9.6 1.8v2.6c0 .3.2.7.8.6a10.5 10.5 0 0 0 7.8-10.9C23.5 5.6 18.4.5 12 .5Z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/ffwolff" target="_blank" aria-label="LinkedIn" class="hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+              <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5Zm.02 4.7h-.03c-.01 0-.01 0 0 0H5v11H2V8.2h3Zm7.5.2c-1.67 0-2.5 1.08-2.94 1.84v-.02H9V8.2h-3v11h3v-5.8c0-.41.03-.83.18-1.1.4-.7 1.05-1.4 2.27-1.4 1.6 0 2.2 1.05 2.2 2.6V19.2h3v-6.1c0-3.5-1.87-5.1-4.47-5.1Z"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  
+    <script>
+      const menuBtn = document.getElementById('menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+  
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </header>
+  
 
   <!-- Sobre -->
   <section id="sobre" class="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8">
