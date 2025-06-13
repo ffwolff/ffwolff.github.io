@@ -4,27 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Franco Frassanito Wolff | Portfólio</title>
-    <!-- Tailwind CSS via CDN (Play CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   
 <body class="bg-gray-100 text-gray-900 font-sans">
   <script src="script.js"></script>
-  <!-- Header -->
   <header class="bg-white shadow-md">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <!-- Esquerda: nome -->
       <h1 class="text-2xl font-bold">Franco Wolff</h1>
-  
-      <!-- Botão do menu (mobile) -->
       <button id="menu-button" class="md:hidden focus:outline-none">
         <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
-  
-      <!-- Navegação e ícones (desktop) -->
       <div class="hidden md:flex items-center space-x-6">
         <nav class="space-x-4">
           <a href="#sobre" class="hover:underline">Sobre</a>
@@ -33,16 +26,13 @@
           <a href="#contato" class="hover:underline">Contato</a>
         </nav>
         <div class="w-px h-6 bg-gray-300"></div>
-        <!-- Ícones sociais -->
         <div class="flex space-x-4">
           <a href="https://github.com/ffwolff" target="_blank" aria-label="GitHub" class="hover:text-gray-400">
-            <!-- GitHub -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
               <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.8-1.5-3.8-1.5-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.2 3 .9.1-.6.3-1.2.6-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.3.3.6.9.6 1.8v2.6c0 .3.2.7.8.6a10.5 10.5 0 0 0 7.8-10.9C23.5 5.6 18.4.5 12 .5Z"/>
             </svg>
           </a>
           <a href="https://linkedin.com/in/ffwolff" target="_blank" aria-label="LinkedIn" class="hover:text-gray-400">
-            <!-- LinkedIn -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
               <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5Zm.02 4.7h-.03c-.01 0-.01 0 0 0H5v11H2V8.2h3Zm7.5.2c-1.67 0-2.5 1.08-2.94 1.84v-.02H9V8.2h-3v11h3v-5.8c0-.41.03-.83.18-1.1.4-.7 1.05-1.4 2.27-1.4 1.6 0 2.2 1.05 2.2 2.6V19.2h3v-6.1c0-3.5-1.87-5.1-4.47-5.1Z"/>
             </svg>
@@ -50,8 +40,6 @@
         </div>
       </div>
     </div>
-  
-    <!-- Menu mobile (dropdown) -->
     <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
       <nav class="flex flex-col space-y-2">
         <a href="#sobre" class="hover:underline">Sobre</a>
@@ -71,8 +59,7 @@
           </a>
         </div>
       </nav>
-    </div>
-  
+    </div>  
     <script>
       const menuBtn = document.getElementById('menu-button');
       const mobileMenu = document.getElementById('mobile-menu');
@@ -83,8 +70,6 @@
     </script>
   </header>
   
-
-  <!-- Sobre -->
   <section id="sobre" class="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8">
     <img src="assets/profile.jpg" alt="Foto de perfil" class="w-40 h-40 rounded-full object-cover shadow-md" />
     <div>
@@ -95,12 +80,10 @@
     </div>
   </section>
 
-  <!-- Projetos -->
   <section id="projetos" class="bg-white py-12">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-semibold mb-8">Projetos</h2>
       <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
-        <!-- Início do projeto -->
         <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between">
           <h3 class="text-xl font-bold mb-2">Auto Downloader</h3>
           <p class="mb-4">
@@ -108,16 +91,12 @@
           </p>
           <a href="https://github.com/ffwolff/automate_downloader" target="_blank" class="text-blue-600 hover:underline">Ver no Github →</a>
         </div>
-        <!-- Fim do projeto -->
-        <!-- Início do projeto -->
         <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between">
           <h3 class="text-xl font-bold mb-2">Custom Checkbox Plugin</h3>
           <p class="mb-4">Plugin para o Bubble que permite adicionar caixas de seleção totalmente personalizáveis às aplicações. Personalize cores de ícone, texto e fundo, e rastreie o estado dinâmico do checkbox.
           </p>
           <a href="https://bubble.io/plugin/custom-checkbox-1743509766523x683885632507609100" target="_blank" class="text-blue-600 hover:underline">Ver no Bubble →</a>
         </div>
-        <!-- Fim do projeto -->
-        <!-- Início do projeto -->
         <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between">
           <h3 class="text-xl font-bold mb-2">Simple Loader Plugin</h3>
           <p class="mb-4">
@@ -125,8 +104,6 @@
           </p>
           <a href="https://bubble.io/plugin/simple-loader-1742925746033x243018871372251140" target="_blank" class="text-blue-600 hover:underline">Ver no Bubble →</a>
         </div>
-        <!-- Fim do projeto -->
-        <!-- Início do projeto -->
         <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between">
           <h3 class="text-xl font-bold mb-2">Input Range Slider Plugin</h3>
           <p class="mb-4">
@@ -134,8 +111,6 @@
           </p>
           <a href="https://bubble.io/plugin/input-range-slider-1742574985633x700479702322118700" target="_blank" class="text-blue-600 hover:underline">Ver no Bubble →</a>
         </div>
-        <!-- Fim do projeto -->
-         <!-- Início do projeto -->
         <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between">
           <h3 class="text-xl font-bold mb-2">Observatório da Saúde</h3>
           <p class="mb-4">
@@ -143,8 +118,6 @@
           </p>
           <a href="https://observatoriodasaude.sesirs.org.br/version-test" target="_blank" class="text-blue-600 hover:underline">Versão Teste →</a>
         </div>
-        <!-- Fim do projeto -->
-         <!-- Início do projeto -->
         <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between">
           <h3 class="text-xl font-bold mb-2">Gestão do Presenteísmo</h3>
           <p class="mb-4">
@@ -152,8 +125,6 @@
             </p>
             <a href="https://gestao-do-presenteismo-48714.bubbleapps.io/version-test" target="_blank" class="text-blue-600 hover:underline">Versão Teste →</a>
         </div>
-        <!-- Fim do projeto -->
-         <!-- Início do projeto -->
         <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between">
           <h3 class="text-xl font-bold mb-2">Indústria Solidária</h3>
           <p class="mb-4">
@@ -161,8 +132,6 @@
           </p>          
             <a href="https://cadastrosolidarioindustria.com.br/version-test" target="_blank" class="text-blue-600 hover:underline">Versão Teste →</a>
         </div>
-        <!-- Fim do projeto -->
-         <!-- Início do projeto -->
         <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between">
           <h3 class="text-xl font-bold mb-2">Saúde Mental - SESI/RS</h3>
           <p class="mb-4">
@@ -171,8 +140,6 @@
           <a href="https://saudemental.sesirs.org.br/version-test" target="_blank" class="text-blue-600 hover:underline">Versão Teste →</a>
 
           </div>
-        <!-- Fim do projeto -->
-         <!-- Início do projeto -->
         <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between">
           <h3 class="text-xl font-bold mb-2">Central do Credenciado SESI/RS</h3>
           <p class="mb-4">
@@ -180,12 +147,10 @@
           </p>          
           <a href="https://centraldocredenciado.sesirs.org.br/version-test" target="_blank" class="text-blue-600 hover:underline">Versão Teste →</a>
         </div>
-        <!-- Fim do projeto -->
       </div>
     </div>
   </section>
 
-  <!-- Habilidades -->
   <section id="habilidades" class="container mx-auto px-4 py-12">
     <h2 class="text-3xl font-semibold mb-6">Habilidades</h2>
     <div class="flex flex-wrap gap-4">
@@ -197,11 +162,9 @@
       <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">NodeJS</span>
       <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Git</span>
       <span class="bg-pink-100 text-pink-800 px-4 py-2 rounded-full">Agile</span>
-      <!-- Adicione outras habilidades se quiser -->
     </div>
   </section>
 
-  <!-- Contato -->
   <section id="contato" class="bg-white py-12">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-semibold mb-4">Contato</h2>
@@ -209,15 +172,12 @@
       <div class="flex justify-center gap-6">
         <a href="https://github.com/ffwolff" target="_blank" class="text-gray-700 hover:text-black">GitHub</a>
         <a href="https://linkedin.com/in/ffwolff" target="_blank" class="text-gray-700 hover:text-blue-600">LinkedIn</a>
-        <!-- Futuramente podemos adicionar um formulário de contato aqui -->
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
+  
   <footer class="bg-gray-200 text-center py-4 mt-12">
     <p class="text-sm">© 2025 Franco Wolff. Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
