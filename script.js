@@ -1,6 +1,3 @@
-// script.js
-
-// Scroll suave nos links de navegação
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
       e.preventDefault();
@@ -8,8 +5,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       target?.scrollIntoView({ behavior: 'smooth' });
     });
   });
-  
-  // Realçar link do menu baseado na seção visível (opcional)
+
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll("nav a");
   
