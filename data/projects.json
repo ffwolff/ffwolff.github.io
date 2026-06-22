@@ -1,37 +1,215 @@
 [
   {
-    "name": "Mentis 360",
-    "stack": ["React", "Firebase", "GCP"],
-    "description": "Plataforma corporativa de saúde mental com dashboards analíticos, trilhas de cuidado e gestão de dados em tempo real.",
-    "impact": "Sistema usado para análise de saúde organizacional em empresas do Sistema FIERGS.",
-    "link": "#"
-  },
-  {
     "name": "Programa Cashback SESI",
-    "stack": ["Bubble", "APIs", "Low-Code"],
-    "description": "Sistema de fidelidade com regras de negócio, controle de créditos e integração com sistemas corporativos.",
-    "impact": "Aumentou engajamento de usuários em serviços digitais do SESI.",
-    "link": "#"
+    "category": "Web Platform",
+    "year": "2026",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "Firebase", "APIs", "JavaScript"],
+    "description": "Plataforma de fidelização e benefícios para usuários dos serviços SESI-RS.",
+    "impact": "Implementação de melhorias operacionais, regras de negócio, integrações corporativas e otimização da experiência dos usuários.",
+    "link": "https://programacashback.sesirs.org.br/"
   },
   {
-    "name": "Rede Alerta App",
-    "stack": ["FlutterFlow", "Firebase"],
-    "description": "Aplicação mobile para comunicação operacional e gestão de informações em campo.",
-    "impact": "Centralização de dados e melhoria na comunicação interna.",
-    "link": "#"
+    "name": "Legado das Enchentes",
+    "category": "Knowledge Platform",
+    "year": "2025",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "Cloud Storage", "APIs"],
+    "description": "Portal institucional para preservação e divulgação do acervo gerado durante as enchentes do RS.",
+    "impact": "Centralização de documentos, indicadores, materiais multimídia e registros da maior operação humanitária do Sistema FIERGS.",
+    "link": "https://legadoenchentes.sesirs.org.br/"
   },
   {
-    "name": "Central do Credenciado",
-    "stack": ["Bubble", "Google Maps API", "JS"],
-    "description": "Sistema de credenciamento com geolocalização, check-in/out e painel administrativo.",
-    "impact": "Automatização do controle de presença e relatórios operacionais.",
-    "link": "#"
+    "name": "Rede Alerta",
+    "category": "Mobile App",
+    "year": "2025-2026",
+    "role": "Mobile Developer",
+    "stack": ["FlutterFlow", "Firebase", "Mobile"],
+    "description": "Aplicativo para comunicação, acompanhamento e registro de informações operacionais do Sistema FIERGS.",
+    "impact": "Facilitou a comunicação e o acompanhamento de atividades diretamente por dispositivos móveis.",
+    "link": "https://play.google.com/store/apps/details?id=br.org.fiergs.redealerta&hl=pt"
   },
   {
-    "name": "PhotoApp (ThoughtWorks)",
-    "stack": ["React", "Firebase", "AI API"],
-    "description": "Aplicação com geração de imagens via inteligência artificial para eventos.",
-    "impact": "Entrega em 10 dias com integração de IA e impressão de imagens físicas.",
-    "link": "#"
+    "name": "Saúde In Company",
+    "category": "HealthTech",
+    "year": "2025-2026",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "Forms", "Data Collection"],
+    "description": "Sistema para coleta e gestão de informações de ações de saúde corporativa.",
+    "impact": "Aumento da rastreabilidade dos registros e apoio à geração de indicadores e relatórios.",
+    "link": "https://www.sesirs.org.br/solucoes-em-saude-do-sesi"
+  },
+  {
+    "name": "Odontologia In Company",
+    "category": "HealthTech",
+    "year": "2025-2026",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "Forms", "Data Collection"],
+    "description": "Plataforma para registro e consolidação de dados dos atendimentos odontológicos realizados pelo SESI.",
+    "impact": "Melhoria da confiabilidade dos registros e integração com sistemas corporativos.",
+    "link": "https://www.sesirs.org.br/odontologia-in-company"
+  },
+  {
+    "name": "Mentis 360",
+    "category": "Mental Health Platform",
+    "year": "2025",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "Dashboards", "Analytics"],
+    "description": "Plataforma de monitoramento da saúde mental corporativa com dashboards e trilhas de cuidado.",
+    "impact": "Melhoria da experiência do usuário, dashboards analíticos e gestão preventiva da saúde mental.",
+    "link": "https://saudemental.sesirs.org.br/solucoesdetalhe/mentis-360-1741795817813x676946301495508000"
+  },
+  {
+    "name": "Check-in do Credenciado",
+    "category": "Geolocation System",
+    "year": "2025",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "Google Maps API", "Geolocation"],
+    "description": "Sistema de check-in e check-out por geolocalização para credenciados do SESI.",
+    "impact": "Automatização do controle operacional e geração de relatórios administrativos.",
+    "link": "https://centraldocredenciado.sesirs.org.br/"
+  },
+  {
+    "name": "Observatório da Saúde",
+    "category": "Data Platform",
+    "year": "2024",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "Dashboards", "Analytics"],
+    "description": "Portal de inteligência de dados voltado à saúde corporativa e tomada de decisões estratégicas.",
+    "impact": "Disponibilização de indicadores, relatórios e análises para gestores e pesquisadores.",
+    "link": "https://observatoriodasaude.sesirs.org.br/"
+  },
+  {
+    "name": "Gestão do Presenteísmo",
+    "category": "HealthTech",
+    "year": "2024-2025",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "Analytics", "Forms"],
+    "description": "Aplicação para monitoramento do presenteísmo e saúde emocional dos trabalhadores.",
+    "impact": "Auxílio à identificação precoce de fatores que impactam o bem-estar e produtividade.",
+    "link": "https://gestao-do-presenteismo-48714.bubbleapps.io/version-test"
+  },
+  {
+    "name": "Indústria Solidária",
+    "category": "Social Impact",
+    "year": "2024-2025",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "Web Platform"],
+    "description": "Portal de apoio às vítimas das enchentes do RS através da conexão entre empresas e ações solidárias.",
+    "impact": "Facilitou a mobilização de doações e o apoio à população afetada pela crise climática.",
+    "link": "https://cadastrosolidarioindustria.com.br/version-test"
+  },
+  {
+    "name": "Saúde Mental SESI-RS",
+    "category": "Corporate Health",
+    "year": "2024-2026",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "CMS", "Web Platform"],
+    "description": "Portal institucional para divulgação de soluções e serviços de saúde mental corporativa.",
+    "impact": "Ampliação da visibilidade das iniciativas de saúde mental para empresas da indústria.",
+    "link": "https://saudemental.sesirs.org.br/"
+  },
+  {
+    "name": "Central do Credenciado SESI-RS",
+    "category": "Enterprise Platform",
+    "year": "2025",
+    "role": "Full Stack Developer",
+    "stack": ["Bubble", "Dashboards", "Portal"],
+    "description": "Portal oficial de credenciamento e gestão de profissionais parceiros do SESI-RS.",
+    "impact": "Centralização de editais, documentos, trilhas de capacitação e gestão operacional.",
+    "link": "https://centraldocredenciado.sesirs.org.br/"
+  },
+  {
+    "name": "TechOps Studio",
+    "category": "Internal Developer Platform",
+    "year": "2021-2022",
+    "role": "Full Stack Developer",
+    "stack": [
+      "Java",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "TDD"
+    ],
+    "description": "Desenvolvimento e manutenção de aplicações internas utilizadas por equipes da ThoughtWorks.",
+    "impact": "Contribuição para a qualidade técnica das soluções através de TDD, boas práticas de engenharia de software, pareamento e suporte a aplicações corporativas.",
+    "link": null,
+    "featured": true
+  },
+  {
+    "name": "XR Lab",
+    "category": "Research & Development",
+    "year": "2022-2023",
+    "role": "XR Developer",
+    "stack": [
+      "Three.js",
+      "WebXR",
+      "JavaScript",
+      "AR"
+    ],
+    "description": "Pesquisa e prototipação de soluções de Realidade Aumentada para clientes da ThoughtWorks.",
+    "impact": "Desenvolvimento de protótipos interativos utilizando Three.js e tecnologias WebXR para validação de novos produtos e experiências digitais.",
+    "link": null,
+    "featured": true
+  },
+  {
+    "name": "PhotoApp AI Experience",
+    "category": "Artificial Intelligence",
+    "year": "2023",
+    "role": "Frontend Developer",
+    "stack": [
+      "React",
+      "Firebase",
+      "Midjourney",
+      "JavaScript"
+    ],
+    "description": "Aplicação desenvolvida para evento corporativo capaz de gerar ilustrações personalizadas utilizando Inteligência Artificial.",
+    "impact": "Projeto entregue em apenas 10 dias, integrando captura de imagens, geração por IA e impressão física para centenas de participantes.",
+    "link": null,
+    "featured": true
+  },
+  {
+    "name": "Custom Checkbox Plugin",
+    "category": "Open Source",
+    "year": "2025",
+    "role": "Plugin Developer",
+    "stack": [
+      "JavaScript",
+      "Bubble",
+      "HTML",
+      "CSS"
+    ],
+    "description": "Plugin para Bubble que permite criar checkboxes totalmente personalizáveis, incluindo cores do ícone, texto e fundo, além de gerenciamento dinâmico de estado.",
+    "impact": "Expansão das capacidades nativas do Bubble através da criação de componentes reutilizáveis para outros desenvolvedores.",
+    "link": "https://bubble.io/plugin/custom-checkbox-1743509766523x683885632507609100"
+  },
+  {
+    "name": "Simple Loader Plugin",
+    "category": "Open Source",
+    "year": "2025",
+    "role": "Plugin Developer",
+    "stack": [
+      "JavaScript",
+      "Bubble",
+      "CSS Animations"
+    ],
+    "description": "Componente de carregamento leve e personalizável para aplicações Bubble, com suporte à customização visual e integração simples.",
+    "impact": "Melhoria da experiência do usuário através de feedback visual durante operações assíncronas.",
+    "link": "https://bubble.io/plugin/simple-loader-1742925746033x243018871372251140"
+  },
+  {
+    "name": "Input Range Slider Plugin",
+    "category": "Open Source",
+    "year": "2025",
+    "role": "Plugin Developer",
+    "stack": [
+      "JavaScript",
+      "Bubble",
+      "HTML",
+      "CSS"
+    ],
+    "description": "Slider avançado para Bubble com suporte a gradientes dinâmicos, personalização visual completa e controle de valores mínimos, máximos e iniciais.",
+    "impact": "Disponibilização de um componente altamente configurável para aplicações desenvolvidas na plataforma Bubble.",
+    "link": "https://bubble.io/plugin/input-range-slider-1742574985633x700479702322118700"
   }
 ]

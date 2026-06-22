@@ -1,27 +1,131 @@
 .projects-section {
-  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
 }
 
+.projects-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* GRID RESPONSIVO */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-.project-card h3 {
-  color: var(--primary);
+/* CARD BASE */
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.25s;
 }
 
-.project-card small {
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+/* HEADER DO CARD */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.project-category,
+.project-year {
+  font-size: 0.85rem;
   color: var(--muted);
+}
+
+/* TEXTOS */
+.project-card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
 }
 
 .project-card p {
   color: var(--text);
   opacity: 0.9;
+  line-height: 1.6;
 }
 
-.project-card i {
-  margin-right: 8px;
+.project-card small {
+  color: var(--muted);
+  display: block;
+  margin-top: 10px;
+}
+
+/* IMPACT */
+.impact {
+  margin-top: 10px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* STACK */
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.stack span {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(79, 140, 255, 0.1);
+  border: 1px solid rgba(79, 140, 255, 0.2);
   color: var(--primary);
+}
+
+/* FOOTER */
+.project-footer {
+  margin-top: 18px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* LINKS */
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.project-link:hover {
+  opacity: 0.8;
+}
+
+.project-private {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+}
+
+/* RESPONSIVO MOBILE */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 60px 20px;
+  }
+
+  .projects-section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }

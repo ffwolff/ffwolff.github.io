@@ -1,20 +1,22 @@
 .hero {
-  padding: 120px 40px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
 }
 
-.hero h1 {
-  font-size: 52px;
+.hero-content h1 {
+  font-size: 3.2rem;
   letter-spacing: -1px;
+  margin-bottom: 12px;
 }
 
-.hero p {
+.hero-content p {
   color: var(--muted);
-}
-
-.card {
-  text-align: center;
-  border-left: 3px solid var(--primary);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .cta {
@@ -22,11 +24,34 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
+/* SKILLS / HIGHLIGHTS */
 .highlights {
+  text-align: center;
+}
+
+.highlights-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  padding: 40px;
+}
+
+.highlights .card {
+  text-align: center;
+  border-left: 3px solid var(--primary);
+  font-weight: 500;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: center;
+  }
 }
