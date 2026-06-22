@@ -9,7 +9,6 @@ async function loadComponent(selector, url) {
 
     target.innerHTML = html;
 
-    // 👇 SÓ AQUI depois do DOM existir
     initNavbarLogic();
 
   } catch (err) {
@@ -21,40 +20,34 @@ function initNavbarLogic() {
   const themeToggle = document.getElementById("themeToggle");
   const root = document.documentElement;
 
-  if (!themeToggle) {
-    console.warn("themeToggle não encontrado");
-    return;
-  }
+  if (!themeToggle) return;
 
-  // aplicar tema salvo OU sistema
-  const savedTheme = localStorage.getItem("theme");
+  // pega tema salvo ou sistema
+  const savedTheme =
+    localStorage.getItem("theme") ||
+    (window.matchMedia("(prefers-color-scheme: light)").matches
+      ? "light"
+      : "dark");
 
-  if (savedTheme) {
-    root.setAttribute("data-theme", savedTheme);
-  }
+  root.setAttribute("data-theme", savedTheme);
 
-  function updateIcon() {
-    const current = root.getAttribute("data-theme");
-
+  function updateIcon(theme) {
     themeToggle.innerHTML =
-      current === "light"
+      theme === "light"
         ? `<i class="fa-solid fa-sun"></i>`
         : `<i class="fa-solid fa-moon"></i>`;
   }
 
-  updateIcon();
+  updateIcon(savedTheme);
 
   themeToggle.addEventListener("click", () => {
     const current = root.getAttribute("data-theme");
 
-    if (current === "light") {
-      root.removeAttribute("data-theme");
-      localStorage.setItem("theme", "dark");
-    } else {
-      root.setAttribute("data-theme", "light");
-      localStorage.setItem("theme", "light");
-    }
+    const next = current === "light" ? "dark" : "light";
 
-    updateIcon();
+    root.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+
+    updateIcon(next);
   });
 }

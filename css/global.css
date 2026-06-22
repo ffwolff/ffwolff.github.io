@@ -1,5 +1,5 @@
 :root {
-  /* DARK (default) */
+  /* DARK MODE (default) */
   --bg: #0b1220;
   --card: #111a2e;
 
@@ -26,22 +26,7 @@
   --border: rgba(15, 23, 42, 0.12);
 }
 
-/* AUTO: sistema do usuário */
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme]) {
-    --bg: #f6f8fc;
-    --card: #ffffff;
-
-    --text: #0b1220;
-    --muted: #4b5563;
-
-    --primary: #2563eb;
-    --accent: #7c5cff;
-
-    --border: rgba(15, 23, 42, 0.12);
-  }
-}
-
+/* RESET */
 * {
   box-sizing: border-box;
 }
@@ -72,10 +57,9 @@ a:hover {
   align-items: center;
   padding: 18px 40px;
   background: var(--card);
-  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  border-bottom: 1px solid var(--border);
   z-index: 100;
 }
 
@@ -85,7 +69,7 @@ a:hover {
   letter-spacing: 2px;
 }
 
-/* NAV LINKS */
+/* NAV */
 nav {
   display: flex;
   align-items: center;
@@ -163,7 +147,7 @@ nav i {
   border-color: var(--primary);
 }
 
-/* SEÇÕES */
+/* SEÇÕES PADRÃO */
 section {
   max-width: 1200px;
   margin: 0 auto;
