@@ -5,6 +5,7 @@
 
 .contact h1 {
   color: var(--primary);
+  transition: color 0.3s ease;
 }
 
 .contact p {
@@ -12,6 +13,7 @@
   margin-bottom: 40px;
 }
 
+/* BOTÕES PADRÃO (DARK MODE) */
 .contact-box {
   display: flex;
   justify-content: center;
@@ -20,18 +22,44 @@
 
 .contact-box a {
   background: rgba(58, 61, 92, 0.6);
-  border: 1px solid rgba(141,153,174,0.2);
+  border: 1px solid rgba(141, 153, 174, 0.2);
   padding: 15px 20px;
   border-radius: 10px;
-  transition: 0.2s;
+  transition: 0.25s ease;
+  color: var(--text);
 }
 
 .contact-box a:hover {
   border-color: var(--primary);
   color: var(--primary);
+  transform: translateY(-2px);
 }
 
 .contact-box i {
   margin-right: 8px;
   color: var(--primary);
+}
+
+/* 🌞 LIGHT MODE AJUSTES */
+[data-theme="light"] .contact h1 {
+  color: #1e3a8a; /* azul mais escuro e elegante */
+}
+
+[data-theme="light"] .contact p {
+  opacity: 0.8;
+  color: var(--muted);
+}
+
+/* BOTÕES NO LIGHT MODE */
+[data-theme="light"] .contact-box a {
+  background: #dbeafe; /* azul claro suave */
+  border: 1px solid rgba(30, 58, 138, 0.25);
+  color: #1e3a8a;
+}
+
+[data-theme="light"] .contact-box a:hover {
+  background: #bfdbfe;
+  border-color: #1e3a8a;
+  color: #1e3a8a;
+  transform: translateY(-2px);
 }

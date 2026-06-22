@@ -27,7 +27,7 @@
   flex-wrap: wrap;
 }
 
-/* SKILLS / HIGHLIGHTS */
+/* SKILLS */
 .highlights {
   text-align: center;
 }
@@ -42,6 +42,12 @@
   text-align: center;
   border-left: 3px solid var(--primary);
   font-weight: 500;
+  transition: 0.2s;
+}
+
+.highlights .card:hover {
+  transform: translateY(-4px);
+  background: rgba(79, 140, 255, 0.04);
 }
 
 /* RESPONSIVO */
