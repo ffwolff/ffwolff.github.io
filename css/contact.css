@@ -13,7 +13,6 @@
   margin-bottom: 40px;
 }
 
-/* BOTÕES PADRÃO (DARK MODE) */
 .contact-box {
   display: flex;
   justify-content: center;
@@ -40,9 +39,8 @@
   color: var(--primary);
 }
 
-/* 🌞 LIGHT MODE AJUSTES */
 [data-theme="light"] .contact h1 {
-  color: #1e3a8a; /* azul mais escuro e elegante */
+  color: #1e3a8a; 
 }
 
 [data-theme="light"] .contact p {
@@ -50,9 +48,8 @@
   color: var(--muted);
 }
 
-/* BOTÕES NO LIGHT MODE */
 [data-theme="light"] .contact-box a {
-  background: #dbeafe; /* azul claro suave */
+  background: #dbeafe; 
   border: 1px solid rgba(30, 58, 138, 0.25);
   color: #1e3a8a;
 }

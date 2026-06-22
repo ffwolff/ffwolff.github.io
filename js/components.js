@@ -22,7 +22,6 @@ function initNavbarLogic() {
 
   if (!themeToggle) return;
 
-  // pega tema salvo ou sistema
   const savedTheme =
     localStorage.getItem("theme") ||
     (window.matchMedia("(prefers-color-scheme: light)").matches

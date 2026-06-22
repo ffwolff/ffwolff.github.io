@@ -34,7 +34,6 @@
   max-width: 700px;
 }
 
-/* CARDS */
 .metric-card,
 .highlight-card {
   background: var(--card);
@@ -51,7 +50,6 @@
   border-color: var(--primary);
 }
 
-/* SKILLS TAGS (melhor no light) */
 .skills-grid span {
   padding: 10px 18px;
   border-radius: 999px;
@@ -63,7 +61,6 @@
   font-weight: 500;
 }
 
-/* TIMELINE */
 .timeline-item {
   border-left: 3px solid var(--primary);
   padding-left: 24px;
@@ -81,14 +78,12 @@
   background: var(--primary);
 }
 
-/* CTA */
 .about-cta {
   background: var(--card);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
   .about-hero {
     flex-direction: column;

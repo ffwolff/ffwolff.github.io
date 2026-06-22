@@ -27,7 +27,6 @@
   flex-wrap: wrap;
 }
 
-/* SKILLS */
 .highlights {
   text-align: center;
 }
@@ -50,7 +49,6 @@
   background: rgba(79, 140, 255, 0.04);
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.3rem;
