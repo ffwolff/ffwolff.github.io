@@ -1,5 +1,4 @@
 :root {
-  /* DARK MODE (default) */
   --bg: #0b1220;
   --card: #111a2e;
 
@@ -14,15 +13,14 @@
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* 🌞 LIGHT MODE (refinado) */
 [data-theme="light"] {
-  --bg: #f4f7fb;         /* menos branco puro */
+  --bg: #f4f7fb;         
   --card: #ffffff;
 
-  --text: #0f172a;       /* mais profundo (slate) */
+  --text: #0f172a;      
   --muted: #5b6472;
 
-  --primary: #1d4ed8;    /* azul mais elegante */
+  --primary: #1d4ed8;    
   --accent: #6d28d9;
 
   --border: rgba(15, 23, 42, 0.12);
@@ -30,7 +28,6 @@
   --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
 
-/* RESET */
 * {
   box-sizing: border-box;
 }
@@ -43,7 +40,6 @@ body {
   transition: background 0.35s ease, color 0.35s ease;
 }
 
-/* LINKS */
 a {
   color: var(--text);
   text-decoration: none;
@@ -54,7 +50,6 @@ a:hover {
   color: var(--primary);
 }
 
-/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -73,7 +68,6 @@ a:hover {
   letter-spacing: 2px;
 }
 
-/* NAV */
 nav {
   display: flex;
   align-items: center;
@@ -97,7 +91,6 @@ nav i {
   color: var(--primary);
 }
 
-/* THEME BUTTON */
 .theme-toggle {
   background: transparent;
   border: 1px solid var(--border);
@@ -115,11 +108,11 @@ nav i {
   background: rgba(79, 140, 255, 0.08);
 }
 
-/* BUTTONS */
+
 .btn {
   padding: 10px 18px;
   background: var(--primary);
-  color: white;
+  color: var(--text); 
   border-radius: 12px;
   display: inline-flex;
   align-items: center;
@@ -147,7 +140,6 @@ nav i {
   background: rgba(79, 140, 255, 0.08);
 }
 
-/* CARDS */
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -162,14 +154,12 @@ nav i {
   border-color: var(--primary);
 }
 
-/* SEÇÕES */
 section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 40px;
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
