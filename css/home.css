@@ -1,0 +1,32 @@
+.hero {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 52px;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  color: var(--muted);
+}
+
+.card {
+  text-align: center;
+  border-left: 3px solid var(--primary);
+}
+
+.cta {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px;
+}

@@ -1,0 +1,30 @@
+.about {
+  padding: 80px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about h1 {
+  color: var(--primary);
+}
+
+.about p {
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.info-card h3 {
+  color: var(--primary);
+}
+
+.info-card p {
+  color: var(--muted);
+}

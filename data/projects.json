@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Mentis 360",
+    "stack": ["React", "Firebase", "GCP"],
+    "description": "Plataforma corporativa de saúde mental com dashboards analíticos, trilhas de cuidado e gestão de dados em tempo real.",
+    "impact": "Sistema usado para análise de saúde organizacional em empresas do Sistema FIERGS.",
+    "link": "#"
+  },
+  {
+    "name": "Programa Cashback SESI",
+    "stack": ["Bubble", "APIs", "Low-Code"],
+    "description": "Sistema de fidelidade com regras de negócio, controle de créditos e integração com sistemas corporativos.",
+    "impact": "Aumentou engajamento de usuários em serviços digitais do SESI.",
+    "link": "#"
+  },
+  {
+    "name": "Rede Alerta App",
+    "stack": ["FlutterFlow", "Firebase"],
+    "description": "Aplicação mobile para comunicação operacional e gestão de informações em campo.",
+    "impact": "Centralização de dados e melhoria na comunicação interna.",
+    "link": "#"
+  },
+  {
+    "name": "Central do Credenciado",
+    "stack": ["Bubble", "Google Maps API", "JS"],
+    "description": "Sistema de credenciamento com geolocalização, check-in/out e painel administrativo.",
+    "impact": "Automatização do controle de presença e relatórios operacionais.",
+    "link": "#"
+  },
+  {
+    "name": "PhotoApp (ThoughtWorks)",
+    "stack": ["React", "Firebase", "AI API"],
+    "description": "Aplicação com geração de imagens via inteligência artificial para eventos.",
+    "impact": "Entrega em 10 dias com integração de IA e impressão de imagens físicas.",
+    "link": "#"
+  }
+]

@@ -1,0 +1,27 @@
+.projects-section {
+  padding: 60px 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card h3 {
+  color: var(--primary);
+}
+
+.project-card small {
+  color: var(--muted);
+}
+
+.project-card p {
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.project-card i {
+  margin-right: 8px;
+  color: var(--primary);
+}

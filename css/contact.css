@@ -1,0 +1,37 @@
+.contact {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.contact h1 {
+  color: var(--primary);
+}
+
+.contact p {
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-box a {
+  background: rgba(58, 61, 92, 0.6);
+  border: 1px solid rgba(141,153,174,0.2);
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.contact-box a:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.contact-box i {
+  margin-right: 8px;
+  color: var(--primary);
+}
