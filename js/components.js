@@ -3,51 +3,58 @@ async function loadComponent(selector, url) {
 
   if (!target) return;
 
-  const res = await fetch(url);
-  const html = await res.text();
+  try {
+    const res = await fetch(url);
+    const html = await res.text();
 
-  target.innerHTML = html;
+    target.innerHTML = html;
 
-  // reativar scripts dependentes da navbar
-  initNavbarLogic();
+    // 👇 SÓ AQUI depois do DOM existir
+    initNavbarLogic();
+
+  } catch (err) {
+    console.error("Erro ao carregar componente:", err);
+  }
 }
 
 function initNavbarLogic() {
   const themeToggle = document.getElementById("themeToggle");
   const root = document.documentElement;
 
-  // carregar tema salvo
+  if (!themeToggle) {
+    console.warn("themeToggle não encontrado");
+    return;
+  }
+
+  // aplicar tema salvo OU sistema
   const savedTheme = localStorage.getItem("theme");
 
   if (savedTheme) {
     root.setAttribute("data-theme", savedTheme);
   }
 
-  function updateIcon(theme) {
-    if (!themeToggle) return;
+  function updateIcon() {
+    const current = root.getAttribute("data-theme");
 
     themeToggle.innerHTML =
-      theme === "light"
+      current === "light"
         ? `<i class="fa-solid fa-sun"></i>`
         : `<i class="fa-solid fa-moon"></i>`;
   }
 
-  const currentTheme = root.getAttribute("data-theme") || "dark";
-  updateIcon(currentTheme);
+  updateIcon();
 
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-      const current = root.getAttribute("data-theme");
+  themeToggle.addEventListener("click", () => {
+    const current = root.getAttribute("data-theme");
 
-      if (current === "light") {
-        root.removeAttribute("data-theme");
-        localStorage.setItem("theme", "dark");
-        updateIcon("dark");
-      } else {
-        root.setAttribute("data-theme", "light");
-        localStorage.setItem("theme", "light");
-        updateIcon("light");
-      }
-    });
-  }
+    if (current === "light") {
+      root.removeAttribute("data-theme");
+      localStorage.setItem("theme", "dark");
+    } else {
+      root.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+    }
+
+    updateIcon();
+  });
 }
