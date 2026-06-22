@@ -11,16 +11,7 @@
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">FW</div>
-
-  <nav>
-    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-    <a href="projects.html"><i class="fa-solid fa-folder-open"></i> Projetos</a>
-    <a href="about.html"><i class="fa-solid fa-user"></i> Sobre</a>
-    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contato</a>
-  </nav>
-</header>
+<div id="navbar"></div>
 
 <section class="contact">
   <h1>Contato</h1>
@@ -42,5 +33,9 @@
   </div>
 </section>
 
+<script src="./js/components.js"></script>
+<script>
+  loadComponent("#navbar", "./components/navbar.html");
+</script>
 </body>
 </html>

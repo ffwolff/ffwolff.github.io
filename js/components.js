@@ -1,4 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
+async function loadComponent(selector, url) {
+  const target = document.querySelector(selector);
+
+  if (!target) return;
+
+  const res = await fetch(url);
+  const html = await res.text();
+
+  target.innerHTML = html;
+
+  // reativar scripts dependentes da navbar
+  initNavbarLogic();
+}
+
+function initNavbarLogic() {
   const themeToggle = document.getElementById("themeToggle");
   const root = document.documentElement;
 
@@ -9,9 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     root.setAttribute("data-theme", savedTheme);
   }
 
-  // definir estado inicial correto (opcional mas melhora UX)
-  const currentTheme = root.getAttribute("data-theme") || "dark";
-
   function updateIcon(theme) {
     if (!themeToggle) return;
 
@@ -21,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : `<i class="fa-solid fa-moon"></i>`;
   }
 
+  const currentTheme = root.getAttribute("data-theme") || "dark";
   updateIcon(currentTheme);
 
   if (themeToggle) {
@@ -38,4 +50,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-});
+}

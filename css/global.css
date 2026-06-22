@@ -1,4 +1,5 @@
 :root {
+  /* DARK (default) */
   --bg: #0b1220;
   --card: #111a2e;
 
@@ -11,6 +12,36 @@
   --border: rgba(255, 255, 255, 0.08);
 }
 
+/* 🌞 LIGHT MODE */
+[data-theme="light"] {
+  --bg: #f6f8fc;
+  --card: #ffffff;
+
+  --text: #0b1220;
+  --muted: #4b5563;
+
+  --primary: #2563eb;
+  --accent: #7c5cff;
+
+  --border: rgba(15, 23, 42, 0.12);
+}
+
+/* AUTO: sistema do usuário */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --bg: #f6f8fc;
+    --card: #ffffff;
+
+    --text: #0b1220;
+    --muted: #4b5563;
+
+    --primary: #2563eb;
+    --accent: #7c5cff;
+
+    --border: rgba(15, 23, 42, 0.12);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -20,6 +51,7 @@ body {
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
   background: var(--bg);
   color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* LINKS */
@@ -39,7 +71,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 18px 40px;
-  background: rgba(17, 26, 46, 0.6);
+  background: var(--card);
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
@@ -53,6 +85,13 @@ a:hover {
   letter-spacing: 2px;
 }
 
+/* NAV LINKS */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 nav a {
   display: inline-flex;
   align-items: center;
@@ -61,6 +100,23 @@ nav a {
 }
 
 nav i {
+  color: var(--primary);
+}
+
+/* BOTÃO THEME */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.2s;
+}
+
+.theme-toggle:hover {
+  border-color: var(--primary);
   color: var(--primary);
 }
 
@@ -93,7 +149,7 @@ nav i {
   color: var(--primary);
 }
 
-/* CARDS PADRÃO (mesmo estilo do about) */
+/* CARDS */
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -107,24 +163,19 @@ nav i {
   border-color: var(--primary);
 }
 
-/* SEÇÕES PADRÃO */
+/* SEÇÕES */
 section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 40px;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .navbar {
-    padding: 14px 20px;
     flex-direction: column;
     gap: 10px;
+    padding: 14px 20px;
   }
 
   section {
