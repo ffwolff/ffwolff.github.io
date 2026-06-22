@@ -22,6 +22,9 @@
   padding: 20px;
   transition: 0.25s;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .project-card:hover {
@@ -29,15 +32,51 @@
   border-color: var(--primary);
 }
 
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
 .project-card h3 {
   color: var(--primary);
-  margin-bottom: 10px;
+  margin: 0;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .project-card p {
   color: var(--text);
   opacity: 0.9;
   line-height: 1.6;
+  margin: 0;
+}
+
+.impact {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  background: rgba(79, 140, 255, 0.08);
+  border: 1px solid rgba(79, 140, 255, 0.15);
+
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
 }
 
 .stack span {
@@ -46,15 +85,27 @@
   color: var(--primary);
   border-radius: 999px;
   padding: 6px 10px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
 }
 
 .project-link {
   color: var(--primary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .project-link:hover {
   opacity: 0.8;
+}
+
+.project-footer {
+  margin-top: auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 @media (max-width: 768px) {
